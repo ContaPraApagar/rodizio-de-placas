@@ -18,7 +18,7 @@ function placa(){
         else if((pla == 9 || pla == 0) && (dia == "sexta" || dia == "Sexta")) {
         texto.innerHTML = "Circulação proibida";}
         
-        else if((pla > 9 || pla < 0 || pla == "" || pla == null) && ( dia !== "segunda" || dia !== "Segunda" || dia !== "terça" || dia !== "Terça" || dia !== "quarta" || dia !== "Quarta" || dia !== "quinta" || dia !== "Quinta" || dia !== "sexta" || dia !== "Sexta" || dia === null || dia.length === 0)) {
+        else if((pla > 9 || pla < 0 || pla == "" || pla == null) || ( dia !== "segunda" || dia !== "Segunda" || dia !== "terça" || dia !== "Terça" || dia !== "quarta" || dia !== "Quarta" || dia !== "quinta" || dia !== "Quinta" || dia !== "sexta" || dia !== "Sexta" || dia === null || dia.length === 0)) {
             texto.innerHTML = "Placa ou dia incorretos";}
         
         else {
